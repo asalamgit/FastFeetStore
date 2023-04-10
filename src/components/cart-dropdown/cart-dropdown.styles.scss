@@ -18,6 +18,10 @@
     overflow: auto;
   }
 
+  .cart-items::-webkit-scrollbar {
+    // display: none;
+  }
+
   button {
     margin-top: auto;
     font-size: 13px;
