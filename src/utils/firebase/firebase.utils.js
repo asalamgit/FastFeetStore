@@ -1,17 +1,18 @@
-// import { initializeApp } from 'firebase/app';
+import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { getFirestore, doc, getDoc, setDoc,collection, writeBatch, query, getDocs} from 'firebase/firestore';
 
-// const firebaseConfig = {
-// 	apiKey: 'AIzaSyBxtzbi7mAv3tgNc6Id3Cbe5Q-ta_bJrY4',
-// 	authDomain: 'crwn-clothin-db-9452f.firebaseapp.com',
-// 	projectId: 'crwn-clothin-db-9452f',
-// 	storageBucket: 'crwn-clothin-db-9452f.appspot.com',
-// 	messagingSenderId: '1014168453490',
-// 	appId: '1:1014168453490:web:864c112609b5a3051c5deb',
-// };
+const firebaseConfig = {
+	apiKey: 'AIzaSyBxtzbi7mAv3tgNc6Id3Cbe5Q-ta_bJrY4',
+	authDomain: 'crwn-clothin-db-9452f.firebaseapp.com',
+	projectId: 'crwn-clothin-db-9452f',
+	storageBucket: 'crwn-clothin-db-9452f.appspot.com',
+	messagingSenderId: '1014168453490',
+	appId: '1:1014168453490:web:864c112609b5a3051c5deb',
+};
 
-// const firebaseApp = initializeApp(firebaseConfig);
+// eslint-disable-next-line no-unused-vars
+const firebaseApp = initializeApp(firebaseConfig);
 
 const provider = new GoogleAuthProvider();
 
