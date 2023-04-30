@@ -1,41 +1,45 @@
 import { Fragment } from 'react';
-import { Outlet } from 'react-router-dom';
-import { ReactComponent as CrwnLogo } from '../../assets/crown.svg';
+import { Link, Outlet } from 'react-router-dom';
+import FastFeetLogo from '../../assets/Logo.png';
 import { signOutUser } from '../../utils/firebase/firebase.utils';
 import CartIcon from '../../components/cart-icon/cart-icon.component';
 import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component';
-import { NavigationContainer, LogoContainer, NavLinks, NavLink } from './navigation.styles';
 import { useSelector } from 'react-redux';
 import { selectCurrentUser } from '../../store/user/user.selector';
 import { selectIsCartOpen } from '../../store/cart/cart.selector';
+import './navigation.styles.scss'
 
 const Navigation = () => {
 	const currentUser = useSelector(selectCurrentUser);
 	const isCartOpen = useSelector(selectIsCartOpen);
 
 	return (
-		<Fragment>
-			<NavigationContainer>
-				<LogoContainer to="/">
-					<CrwnLogo className="logo" />
-				</LogoContainer>
-				<NavLinks >
-					<NavLink  to="/shop">
-						SHOP
-					</NavLink>
+		<>
+      <div className="NavigationContainer">
+        <Link to="/" className="LogoContainer">
+          {/* <FastFeetLogo className="logo" /> */}
+					<img src={FastFeetLogo}/>
+					{/* RUNSALES */}
+        </Link>
+        <div className="NavLinks">
+          <Link to="/shop" className="NavLink">
+            SHOP
+          </Link>
           {currentUser ? (
-            <NavLink as='span' onClick={signOutUser}>
+            <span className="NavLink" onClick={signOutUser}>
               SIGN OUT
-            </NavLink>
+            </span>
           ) : (
-            <NavLink to='/auth'>SIGN IN</NavLink>
+            <Link to="/auth" className="NavLink">
+              SIGN IN
+            </Link>
           )}
-					<CartIcon />
-				</NavLinks>
-				{isCartOpen && <CartDropdown />}
-			</NavigationContainer>
-			<Outlet />
-		</Fragment>
+          <CartIcon />
+        </div>
+        {isCartOpen && <CartDropdown />}
+      </div>
+      <Outlet />
+    </>
 	);
 };
 

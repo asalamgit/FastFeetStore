@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  padding: 20px 40px;
+  padding: 20px 30px;
+  @media only screen and (max-width: 450px) {
+    padding: 4vw 5vw;
+  }
+  background-color: var(--background);
   font-family: 'Open Sans Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -18,4 +22,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  --background: rgb(19, 21, 126);
+  --color1 : #ffffff;
 }
