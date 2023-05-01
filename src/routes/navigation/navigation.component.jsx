@@ -17,9 +17,7 @@ const Navigation = () => {
 		<>
       <div className="NavigationContainer">
         <Link to="/" className="LogoContainer">
-          {/* <FastFeetLogo className="logo" /> */}
-					<img src={FastFeetLogo}/>
-					{/* RUNSALES */}
+					<img src={FastFeetLogo} alt="logo"/>
         </Link>
         <div className="NavLinks">
           <Link to="/shop" className="NavLink">

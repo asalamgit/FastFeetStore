@@ -8,6 +8,7 @@ body {
   font-family: 'Open Sans Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 code {
@@ -26,5 +27,6 @@ a {
 
 :root {
   --background: rgb(19, 21, 126);
+  --background:  rgb(12, 36, 71);
   --color1 : #ffffff;
 }

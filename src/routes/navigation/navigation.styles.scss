@@ -4,10 +4,11 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
+  height : 100px;
 
   .LogoContainer {
     img {
-      width: 100px;
+      width: 120px;
 
       @media only screen and (max-width: 450px) {
         width: 25vw;
