@@ -6,12 +6,20 @@
 	position: relative;
 	cursor: pointer;
 
+  @media screen and (max-width: 1200px) {
+    width: 20.5vw;
+  }
+
 	img {
 		width: 100%;
 		height: 260px;
 		margin-bottom: 10px;
 		border-radius: 10px;
     margin-top: -10px;
+
+    @media screen and (max-width: 1200px) {
+      height: 21.5vw;
+    }
 	}
 
 	&:hover {
@@ -27,10 +35,17 @@
 		justify-content: space-between;
 		font-size: 18px;
 
+    @media screen and (max-width: 1200px) {
+      font-size: 1.8vw;
+    }
+
 		.name {
 			width: 65%;
       height: 80px;
 			color: var(--color1);
+      @media screen and (max-width: 1200px) {
+        height: 7vw;
+      }
 		}
 
 		.price {
