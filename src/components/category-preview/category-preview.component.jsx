@@ -11,12 +11,12 @@ const CategoryPreview = ({ title, products }) => {
 	return (
 		<div className="category-preview-container">
 			<div className="category-preview-header">
-				<h2>
-					<Link className="title" to={title}>
-						{title.toUpperCase()}
-					</Link>
+				<div className="title">
+					<p>{title.toUpperCase()}</p>
+				</div>
+				{/* <Link to={title}> */}
 					<button>See more</button>
-				</h2>
+				{/* </Link> */}
 			</div>
 			<div className="preview">
 				{products
