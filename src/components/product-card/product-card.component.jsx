@@ -3,7 +3,7 @@ import './product-card.styles.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectCartItems } from '../../store/cart/cart.selector';
 import { addItemToCart } from '../../store/cart/cart.action';
-
+// import nike from '../../assets/'
 const ProductCard = ({ product }) => {
   const { name, price, imageUrl } = product;
   
@@ -17,11 +17,11 @@ const ProductCard = ({ product }) => {
       <img src={imageUrl} alt={`${name}`} />
       <div className='footer'>
         <span className='name'>{name}</span>
-        <span className='price'>{price}</span>
+        <span className='price'>{price}€</span>
       </div>
-      <Button buttonType='inverted' onClick={addProductToCart}>
+      {/* <Button buttonType='inverted' onClick={addProductToCart}>
         Add to card
-      </Button>
+      </Button> */}
     </div>
   );
 };
