@@ -22,7 +22,7 @@ const Category = () => {
       <div className='category-container'>
         {products &&
           products.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} title={category} />
           ))}
       </div>
     </Fragment>

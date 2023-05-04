@@ -7,7 +7,6 @@ import { addItemToCart } from '../../store/cart/cart.action';
 const ProductCard = ({ title, product }) => {
 	const { name, price, imageUrl } = product;
 
-	console.log('title===', title);
 	const dispatch = useDispatch();
 	const cartItems = useSelector(selectCartItems);
 
