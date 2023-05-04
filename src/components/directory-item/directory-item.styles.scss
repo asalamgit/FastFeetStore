@@ -4,13 +4,14 @@
   align-items: center;
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
-  background-color: rgb(6, 43, 106);
+  // background-color: rgb(6, 43, 106);
   padding: 30px;
   border-radius: 20px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 450px) {
     border-radius: 2vw;
     padding: 2vw;
+    margin-top: 10vw;
   }
   
   &:hover {
@@ -23,15 +24,15 @@
     align-items: center;
     justify-content: center;
 
-    @media screen and (max-width: 1200px) {
-      height: 10vw;
+    @media screen and (max-width: 450px) {
+      height: 15vw;
     }
 
 		img {
 			width: 180px;
 
-      @media screen and (max-width: 1200px) {
-        width: 15vw;
+      @media screen and (max-width: 450px) {
+        width: 25vw;
       }
 		}
 	}
@@ -39,8 +40,8 @@
   h2{
     color: var(--color1);
     font-size: 25px;
-    @media screen and (max-width: 1200px) {
-      font-size: 2.5vw;
+    @media screen and (max-width: 450px) {
+      font-size: 3.5vw;
     }
   }
 }
