@@ -4,6 +4,7 @@ import './category-preview.styles.scss';
 import { useEffect } from 'react';
 
 const CategoryPreview = ({ title, products }) => {
+
 	// useEffect(() => {
 	// 	console.log('products === ', products);
 	// }, []);
@@ -22,7 +23,7 @@ const CategoryPreview = ({ title, products }) => {
 				{products
 					.filter((_, idx) => idx < 4)
 					.map((product) => (
-						<ProductCard key={product.id} product={product} />
+						<ProductCard key={product.id} product={product} title={title}/>
 					))}
 			</div>
 		</div>
