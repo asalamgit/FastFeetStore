@@ -6,12 +6,22 @@
 	position: relative;
 	cursor: pointer;
 
-  @media screen and (max-width: 1200px) {
-    width: 20.5vw;
-  }
+	&:hover {
+		.product-card-img-container {
+			.price {
+				border-bottom-right-radius: 0;
+				bottom: 5%;
+				right: 5%;
+			}
+		}
+	}
 
-	.product-card-img-container
-	{
+	@media screen and (max-width: 1200px) {
+		width: 20.5vw;
+	}
+
+	.product-card-img-container {
+		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -21,54 +31,49 @@
 		border-radius: 10px;
 		margin-top: -10px;
 
+		.price {
+			position: absolute;
+			background-color: var(--background);
+			padding: 2%;
+			text-align: center;
+			font-weight: bold;
+			width: 30%;
+			bottom: 0%;
+			border-bottom-right-radius: 11px;
+			right: 0%;
+			border: 1px solid white;
+			color: var(--color1);
+			transition-duration: 1s;
+
+			@media screen and (max-width: 1200px) {
+				font-size: 1.8vw;
+			}
+		}
 	}
-	
-	.adidas{
+
+	.adidas {
 		background-color: var(--adidasBackground);
 		img {
 			width: 90%;
 		}
 	}
 
-	.nike{
+	.nike {
 		background-color: var(--nikeBackground);
 		img {
 			width: 80%;
-			transform:scaleX(-1);
+			transform: scaleX(-1);
 		}
 	}
 
-	&:hover {
-		img {
-			opacity: 0.8;
-		}
-	}
-
-	.footer {
+	.name {
 		width: 95%;
-    height: fit-content;
-		display: flex;
-		justify-content: space-between;
 		font-size: 18px;
-
-    @media screen and (max-width: 1200px) {
-      font-size: 1.8vw;
-    }
-
-		.name {
-			width: 65%;
-      height: 60px;
-			color: var(--color1);
-      @media screen and (max-width: 1200px) {
-        height: 7vw;
-      }
-		}
-
-		.price {
-			text-align: right;
-      font-weight: bold;
-			width: 30%;
-			color: var(--color1);
+		height: 42px;
+		color: var(--color1);
+		@media screen and (max-width: 1200px) {
+			height: 7vw;
+			font-size: 1.8vw;
 		}
 	}
 }

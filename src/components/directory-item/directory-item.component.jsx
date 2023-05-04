@@ -8,15 +8,8 @@ const DirectoryItem = ({ category }) => {
 	return (
 		<Link to="/shop" className="NavLink">
 			<div className="directory-item-container">
-				<div
-					className="img-container"
-					// style={{
-					// 	backgroundImage: `url(${imageUrl})`,
-					// }}
-				>
+				<div className="img-container">
 					<img src={imageUrl} alt={title} />
-					{/* <img src={require(`${src}`).default}/>  */}
-					{/* <Image source={{ uri: 'file:///path/to/image' }} /> */}
 				</div>
 				<h2>{title}</h2>
 			</div>

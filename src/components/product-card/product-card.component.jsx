@@ -17,11 +17,11 @@ const ProductCard = ({ title, product }) => {
 		<div className="product-card-container">
 			<div className={`product-card-img-container ${title}`}>
 				<img src={imageUrl} alt={`${name}`} />
+			<span className="price">{price}€</span>
 			</div>
-			<div className="footer">
+			{/* <div className="footer"> */}
 				<span className="name">{name}</span>
-				<span className="price">{price}€</span>
-			</div>
+			{/* </div> */}
 			{/* <Button buttonType='inverted' onClick={addProductToCart}>
         Add to card
       </Button> */}

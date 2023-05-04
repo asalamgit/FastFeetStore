@@ -36,7 +36,7 @@ const Home = () => {
 		},
     {
 			id: 7,
-			title: 'Sauconi',
+			title: 'Saucony',
 			imageUrl: 'https://www.coolshoes.com/uploads/1/0/7/5/107516375/published/saucony-white.png',
 		},
     {
