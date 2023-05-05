@@ -10,7 +10,7 @@
 		.product-card-img-container {
 			.price {
 				border-radius: 10px;
-				bottom: 5%;
+				bottom: 4.3%;
 				right: 5%;
 
 				@media screen and (max-width: 1200px) {
@@ -22,6 +22,10 @@
 
 	@media screen and (max-width: 1200px) {
 		width: 20.5vw;
+	}
+
+	@media only screen and (max-width: 450px) {
+		width: 41vw;
 	}
 
 	.product-card-img-container {
@@ -41,6 +45,12 @@
 			margin-bottom: 1vw;
 		}
 
+		@media only screen and (max-width: 450px) {
+			height: 41vw;
+			border-radius: 2vw;
+			margin-bottom: 2vw;
+		}
+
 		.price {
 			position: absolute;
 			background-color: var(--background);
@@ -50,6 +60,7 @@
 			width: 30%;
 			bottom: 0%;
 			border-bottom-right-radius: 10px;
+			border-top-left-radius: 10px;
 			right: 0%;
 			border: 1px solid white;
 			color: var(--color1);
@@ -59,18 +70,26 @@
 				font-size: 2vw;
 				width: 45%;
 				border-bottom-right-radius: 1vw;
+				border-top-left-radius: 1vw;
+			}
+
+			@media only screen and (max-width: 450px) {
+				font-size: 3vw;
+				width: 40%;
+				border-bottom-right-radius: 2vw;
+				border-top-left-radius: 2vw;
 			}
 		}
 	}
 
-	.adidas {
+	.adidas{
 		background-color: var(--adidasBackground);
 		img {
 			width: 90%;
 		}
 	}
 
-	.nike {
+	.nike, .puma  {
 		background-color: var(--nikeBackground);
 		img {
 			width: 80%;
@@ -86,6 +105,11 @@
 		@media screen and (max-width: 1200px) {
 			height: 5vw;
 			font-size: 2.1vw;
+		}
+
+		@media screen and (max-width: 450px) {
+			height: 10vw;
+			font-size: 4vw;
 		}
 	}
 }

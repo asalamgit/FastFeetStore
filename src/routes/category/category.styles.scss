@@ -1,12 +1,28 @@
-.category-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
-  row-gap: 50px;
+.category-title {
+	font-size: 38px;
+	margin-bottom: 25px;
+	text-align: center;
 }
 
-.category-title {
-  font-size: 38px;
-  margin-bottom: 25px;
-  text-align: center;
+.category-container {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	margin-left: 30px;
+	grid-template-columns: repeat(4, 280px);
+	row-gap: 40px;
+  margin-bottom: 40px;
+
+	@media screen and (max-width: 1200px) {
+		margin-left: 2.5vw;
+		grid-template-columns: repeat(4, 23vw);
+		row-gap: 3.5vw;
+    margin-bottom: 3.5vw;
+	}
+
+  @media only screen and (max-width: 450px) {
+		margin-left: 4.5vw;
+		grid-template-columns: repeat(2, 46vw);
+		row-gap: 8vw;
+	}
 }
