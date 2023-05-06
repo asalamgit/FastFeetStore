@@ -86,18 +86,33 @@
 		}
 	}
 
-	.adidas{
+	.adidas {
 		background-color: var(--adidasBackground);
 		img {
 			width: 90%;
 		}
 	}
 
-	.nike, .puma  {
+	.nike {
 		background-color: var(--nikeBackground);
 		img {
 			width: 80%;
 			transform: scaleX(-1);
+		}
+	}
+
+	.puma {
+		background-color: var(--pumaBackground);
+		img {
+			width: 80%;
+			transform: scaleX(-1);
+		}
+	}
+
+	.asics {
+		background-color: var(--asicsBackground);
+		img {
+			width: 70%;
 		}
 	}
 
