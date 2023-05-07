@@ -462,8 +462,81 @@ const SHOP_DATA = [
 		],
 	},
 	{
-		title: '',
-		items: [],
+		title: 'NewBalance',
+		items: [
+      {
+         "price":130,
+         "id":701,
+         "imageUrl":"https://nb.scene7.com/is/image/NB/mevozmk3_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880",
+         "name":"Fresh Foam X EVOZ v3"
+      },
+      {
+         "id":702,
+         "imageUrl":"https://nb.scene7.com/is/image/NB/m520rb7_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880",
+         "price":75,
+         "name":"520v7"
+      },
+      {
+         "id":703,
+         "price":160,
+         "name":"Fresh Foam X 880v12",
+         "imageUrl":"https://nb.scene7.com/is/image/NB/m880t12_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880"
+      },
+      {
+         "name":"Fresh Foam X More v4",
+         "id":704,
+         "price":160,
+         "imageUrl":"https://nb.scene7.com/is/image/NB/mmorlr4_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880"
+      },
+      {
+         "id":705,
+         "price":140,
+         "name":"FuelCell Summit Unknown v4",
+         "imageUrl":"https://nb.scene7.com/is/image/NB/mtunkny4_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880"
+      },
+      {
+         "id":706,
+         "price":190,
+         "imageUrl":"https://nb.scene7.com/is/image/NB/m1080k12_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880",
+         "name":"Fresh Foam X 1080v12"
+      },
+      {
+         "imageUrl":"https://nb.scene7.com/is/image/NB/mtunknt3_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880",
+         "id":707,
+         "name":"FuelCell Summit Unknown v3",
+         "price":140
+      },
+      {
+         "id":708,
+         "name":"Fresh Foam X Hierro v7",
+         "price":"160",
+         "imageUrl":"https://nb.scene7.com/is/image/NB/mthierg7_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880"
+      },
+      {
+         "price":120,
+         "name":"Fresh Foam Garoé",
+         "id":709,
+         "imageUrl":"https://nb.scene7.com/is/image/NB/mtgaror1_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880"
+      },
+      {
+         "id":710,
+         "price":190,
+         "name":"FuelCell Supercomp Pacer",
+         "imageUrl":"https://nb.scene7.com/is/image/NB/mfcrrcd_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880"
+      },
+      {
+         "price":100,
+         "imageUrl":"https://nb.scene7.com/is/image/NB/mroavhk2_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880",
+         "name":"Fresh Foam Roav v2",
+         "id":711
+      },
+      {
+         "name":"Fresh Foam X Hierro v7 GTX",
+         "imageUrl":"https://nb.scene7.com/is/image/NB/mthierx7_nb_02_i?$pdpflexf22x$&qlt=80&fmt=webp&wid=880&hei=880",
+         "price":180,
+         "id":712
+      }
+   ]
 	},
 	{
 		title: '',
