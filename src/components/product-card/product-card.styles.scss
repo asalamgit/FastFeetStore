@@ -109,10 +109,39 @@
 		}
 	}
 
-	.asics {
+	.asics{
 		background-color: var(--asicsBackground);
 		img {
 			width: 70%;
+		}
+	}
+
+	.mizuno {
+		background-color: var(--asicsBackground);
+		img {
+			width: 70%;
+			transform: scaleX(-1);
+		}
+	}
+
+	.newbalance {
+		background-color: var(--newBalanceBackground);
+		img {
+			width: 75%;
+		}
+	}
+
+	.brooks{
+		background-color: var(--brooksBackground);
+		img {
+			width: 82%;
+		}
+	}
+
+	.saucony{
+		background-color: var(--sauconyBackground);
+		img {
+			width: 63%;
 		}
 	}
 
