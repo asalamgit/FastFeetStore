@@ -25,12 +25,11 @@
 			display: flex;
 			flex-direction: row;
 
-      @media screen and (max-width: 450px) {
-        div {
-          margin: 4vw;
-        }
-      }
+			@media screen and (max-width: 750px) {
+				div {
+					margin: 4vw;
+				}
+			}
 		}
-
 	}
 }

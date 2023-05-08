@@ -17,7 +17,7 @@
 			margin-bottom: 1.8vw;
 		}
 
-		@media screen and (max-width: 450px) {
+		@media screen and (max-width: 750px) {
 			margin-top: 7vw;
 			margin-bottom: 3vw;
 		}
@@ -34,7 +34,7 @@
 				min-width: 30vw;
 			}
 
-			@media screen and (max-width: 450px) {
+			@media screen and (max-width: 750px) {
 				font-size: 3.8vw;
 				min-width: 40vw;
 			}
@@ -61,7 +61,7 @@
 				border: 0.1vw solid var(--color1);
 			}
 
-			@media screen and (max-width: 450px) {
+			@media screen and (max-width: 750px) {
 				margin-left: 30vw;
 				font-size: 2.8vw;
 				padding: 0.5vw;
@@ -82,7 +82,6 @@
 		grid-template-columns: repeat(4, 280px);
 		row-gap: 30px;
 
-
 		@media screen and (max-width: 1200px) {
 			margin-left: 2.5vw;
 			grid-template-columns: repeat(4, 23vw);
@@ -90,7 +89,7 @@
 			margin-bottom: 3.5vw;
 		}
 
-		@media only screen and (max-width: 450px) {
+		@media only screen and (max-width: 750px) {
 			margin-left: 4.5vw;
 			grid-template-columns: repeat(2, 46vw);
 			row-gap: 5.5vw;
