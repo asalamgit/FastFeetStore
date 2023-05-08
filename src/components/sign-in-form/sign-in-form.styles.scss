@@ -1,18 +1,33 @@
 .sign-in-container {
   display: flex;
   flex-direction: column;
-  width: 380px;
+  width: 330px;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 750px) {
     width: 90vw;
   }
   
   h2 {
     margin: 10px 0;
+
+    @media screen and (max-width: 750px) {
+      margin: 1vw 0;
+      font-size: 6vw;
+    }
+  }
+
+  span {
+    margin-bottom: 5px;
+
+    @media screen and (max-width: 750px) {
+      font-size: 4vw;
+      margin-bottom: 0.5vw;
+    }
   }
 
   .buttons-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
