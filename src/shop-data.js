@@ -539,8 +539,81 @@ const SHOP_DATA = [
    ]
 	},
 	{
-		title: '',
-		items: [],
+		title: 'Brooks',
+		items: [
+      {
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dw32792f84/original/110393/110393-407-l-ghost-15-mens-neutral-cushion-running-shoe.png?sw=2776&sh=1736&sm=cut",
+         "id":501,
+         "price":150,
+         "name":"Ghost 15"
+      },
+      {
+         "name":"Trace 2",
+         "id":502,
+         "price":110,
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dwf3f78036/original/110388/110388-035-l-trace-2-mens-neutral-cushion-running-shoe.png?sw=2776&sh=1736&sm=cut"
+      },
+      {
+         "price":170,
+         "id":503,
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dw39995e15/original/110396/110396-405-l-levitate-gts-6-mens-supportive-and-springy-running-shoe.png?sw=2776&sh=1736&sm=cut",
+         "name":"Levitate GTS 6"
+      },
+      {
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dwa13b9b87/original/110386/110386-016-l-launch-9-mens-fast-running-shoe.png?sw=2776&sh=1736&sm=cut",
+         "name":"Launch 9",
+         "price":120,
+         "id":504
+      },
+      {
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dwd469101b/original/110384/110384-404-l-glycerin-stealthfit-20-mens-neutral-cushion-running-shoe.png?sw=2776&sh=1736&sm=cut",
+         "id":505,
+         "price":180,
+         "name":"Glycerin StealthFit 20"
+      },
+      {
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dwaec3b17c/original/110368/110368-004-l-ghost-14-gtx-mens-cushion-running-shoe.png?sw=2776&sh=1736&sm=cut",
+         "price":160,
+         "name":"Ghost 14 GTX",
+         "id":506
+      },
+      {
+         "price":140,
+         "id":507,
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dw2e81d1c2/original/110376/110376-758-l-cascadia-16-mens-trail-running-shoe.png?sw=2776&sh=1736&sm=cut",
+         "name":"Cascadia 16"
+      },
+      {
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dwd9aa3533/original/110339/110339-064-l-hyperion-tempo-mens-fast-running-and-training-shoe.png?sw=2776&sh=1736&sm=cut",
+         "price":"150",
+         "name":"Hyperion Tempo",
+         "id":508
+      },
+      {
+         "name":"Ricochet 3",
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dwc226ef1c/original/110361/110361-494-l-ricochet-3-mens-energy-return-running-shoe.png?sw=2776&sh=1736&sm=cut",
+         "id":509,
+         "price":140
+      },
+      {
+         "id":510,
+         "name":"Zeal Walker",
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dwc0671d1d/original/110389/110389-001-l-zeal-walker-mens-walking-shoe.png?sw=2776&sh=1736&sm=cut",
+         "price":140
+      },
+      {
+         "price":110,
+         "name":"Divide 3",
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dw36f1ec9c/original/110381/110381-490-l-divide-3-mens-trail-running-shoe.png?sw=2776&sh=1736&sm=cut",
+         "id":511
+      },
+      {
+         "price":180,
+         "name":"Glycerin 20",
+         "imageUrl":"https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dw45a491ca/original/110382/110382-414-l-glycerin-20-mens-neutral-cushion-running-shoe.png?sw=2776&sh=1736&sm=cut",
+         "id":512
+      }
+   ]
 	},
 ];
 

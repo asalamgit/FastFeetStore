@@ -5,9 +5,9 @@ import { useEffect } from 'react';
 
 const CategoryPreview = ({ title, products }) => {
 
-	// useEffect(() => {
-	// 	console.log('products === ', JSON.stringify(products));
-	// }, []);
+	useEffect(() => {
+		console.log('products === ', JSON.stringify(products));
+	}, []);
 
 	return (
 		<div className="category-preview-container">
