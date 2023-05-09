@@ -4,7 +4,6 @@ import './category-preview.styles.scss';
 import { useEffect } from 'react';
 
 const CategoryPreview = ({ title, products }) => {
-
 	// useEffect(() => {
 	// 	console.log('products === ', JSON.stringify(products));
 	// }, []);
@@ -15,7 +14,7 @@ const CategoryPreview = ({ title, products }) => {
 				<div className="title">
 					<p>{title.toUpperCase()}</p>
 				</div>
-				<Link to={title}>
+				<Link to={`/shop/${title}`}>
 					<button>See more</button>
 				</Link>
 			</div>
@@ -23,7 +22,7 @@ const CategoryPreview = ({ title, products }) => {
 				{products
 					.filter((_, idx) => idx < 4)
 					.map((product) => (
-						<ProductCard key={product.id} product={product} title={title}/>
+						<ProductCard key={product.id} product={product} title={title} />
 					))}
 			</div>
 		</div>

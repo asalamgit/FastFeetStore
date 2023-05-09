@@ -27,6 +27,7 @@ const Shop = () => {
     <Routes>
       <Route index element={<CategoriesPreview />} />
       <Route path=':category' element={<Category />} />
+      <Route path='*' element={<h1>404 not found</h1>} />
     </Routes>
   );
 };

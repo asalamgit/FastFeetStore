@@ -20,9 +20,6 @@ const Navigation = () => {
 					<img src={FastFeetLogo} alt="logo"/>
         </Link>
         <div className="NavLinks">
-          <Link to="/shop" className="NavLink">
-            SHOP
-          </Link>
           {currentUser ? (
             <span className="NavLink" onClick={signOutUser}>
               SIGN OUT

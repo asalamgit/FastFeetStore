@@ -7,8 +7,8 @@ $main-color: rgb(255, 255, 255);
 	color: $main-color;
 
 	@media screen and (max-width: 750px) {
-		top: -4.5vw;
-		font-size: 3vw;
+		top: -3vw;
+		font-size: 2.5vw;
 	}
 }
 
@@ -17,7 +17,7 @@ $main-color: rgb(255, 255, 255);
 	margin: 25px 0;
 
 	@media screen and (max-width: 750px) {
-		margin: 7vw 0;
+		margin: 5vw 0;
 	}
 
 	.form-input {
@@ -36,8 +36,8 @@ $main-color: rgb(255, 255, 255);
 		@media screen and (max-width: 750px) {
 			// width: 90vw;
 			margin: auto;
-			font-size: 6vw;
-			padding: 2vw;
+			font-size: 3.5vw;
+			padding: 0.5vw;
 			border-radius: 0.3vw;
 		}
 
@@ -65,9 +65,9 @@ $main-color: rgb(255, 255, 255);
 		transition: 300ms ease all;
 
 		@media screen and (max-width: 750px) {
-			left: 3vw;
-			top: 3vw;
-			font-size: 6vw;
+			left: 1vw;
+			top: 1vw;
+			font-size: 3.5vw;
 		}
 
 		&.shrink {
