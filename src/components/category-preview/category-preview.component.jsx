@@ -14,7 +14,7 @@ const CategoryPreview = ({ title, products }) => {
 				<div className="title">
 					<p>{title.toUpperCase()}</p>
 				</div>
-				<Link to={`/shop/${title}`}>
+				<Link to={`${title}`}>
 					<button>See more</button>
 				</Link>
 			</div>

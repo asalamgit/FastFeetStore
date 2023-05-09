@@ -6,7 +6,7 @@ let src = '../../assets/logo/nike.png';
 const DirectoryItem = ({ category }) => {
 	const { imageUrl, title } = category;
 	return (
-		<Link to="/shop" className="NavLink">
+		<Link to={title.toLowerCase()} className="NavLink">
 			<div className="directory-item-container">
 				<div className="img-container">
 					<img src={imageUrl} alt={title} />
