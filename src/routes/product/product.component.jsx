@@ -18,13 +18,13 @@ const Product = () => {
 				<img src={productInfo.imageUrl} alt={product} />
 			</div>
 			<div className="product-info">
-				<h3>{productInfo.name}</h3>
+				<h3>{category.toUpperCase()} {productInfo.name}</h3>
 				<h4>{productInfo.price} €</h4>
 				<div className="select-sizes">
 					<h5>Select size</h5>
 					<div className="sizes">
 						{sizes.map((size) => (
-							<p className="size">{size}</p>
+							<div className="size">{size}</div>
 						))}
 					</div>
 				</div>
