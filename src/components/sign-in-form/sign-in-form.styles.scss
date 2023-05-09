@@ -29,5 +29,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media screen and (max-width: 750px) {
+      justify-content: flex-start;
+      gap: 2vw;
+    }
   }
 }
