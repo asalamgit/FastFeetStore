@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 import './product.styles.scss';
 
-const sizes = [39, 40, 41, 42, 43, 44, 45, 46, 47, 48];
+const sizes = [39, 40, 41, 42, 43, 44, 45, 46, 47];
 
 const Product = () => {
 	const { category, product } = useParams();
@@ -21,13 +21,14 @@ const Product = () => {
 				<h3>{productInfo.name}</h3>
 				<h4>{productInfo.price} €</h4>
 				<div className="select-sizes">
-					<p>Select size</p>
+					<h5>Select size</h5>
 					<div className="sizes">
 						{sizes.map((size) => (
 							<p className="size">{size}</p>
 						))}
 					</div>
 				</div>
+				<button>Add to Cart</button>
 			</div>
 		</div>
 	);
