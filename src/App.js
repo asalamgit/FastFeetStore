@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './routes/home/home.component';
 import Navigation from './routes/navigation/navigation.component';
-import Shop from './routes/shop/shop.component';
 import Authentication from './routes/authentication/authentication.component';
 import Checkout from './routes/checkout/checkout.component';
 import { useDispatch } from 'react-redux';
@@ -12,6 +11,7 @@ import { getCategoriesAndDocuments } from './utils/firebase/firebase.utils';
 import { setCategories } from './store/categories/categories.action';
 import Category from './routes/category/category.component';
 import NotFound from './routes/NotFound/NotFound';
+import Product from './routes/product/product.component';
 
 const App = () => {
 	const dispatch = useDispatch();
@@ -44,6 +44,7 @@ const App = () => {
 			<Route path="/" element={<Navigation />}>
 				<Route index element={<Home />} />
 				<Route path=':category' element={<Category />} />
+				<Route path=':category/:product' element={<Product />} />
 				<Route path="auth" element={<Authentication />} />
 				<Route path="checkout" element={<Checkout />} />
 				<Route path='*' element={<NotFound/>} />

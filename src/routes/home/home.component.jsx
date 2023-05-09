@@ -34,7 +34,7 @@ const categories = [
 	},
 	{
 		id: 6,
-		title: 'New Balance',
+		title: 'NewBalance',
 		imageUrl: 'https://www.freepnglogos.com/uploads/new-balance-png-logo/live-event-sports-streams-new-balance-png-logo-4.png',
 	},
 	{

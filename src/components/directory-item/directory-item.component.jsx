@@ -1,8 +1,6 @@
 import './directory-item.styles.scss';
 import { Link } from 'react-router-dom';
-import nike from '../../assets/logo/nike.png';
 
-let src = '../../assets/logo/nike.png';
 const DirectoryItem = ({ category }) => {
 	const { imageUrl, title } = category;
 	return (
