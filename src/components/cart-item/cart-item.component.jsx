@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import './cart-item.styles.scss';
 
 const CartItem = ({ cartItem }) => {
-	const { imageUrl, price, name, quantity, id, size } = cartItem;
+	const { imageUrl, price, name, quantity, id, sizeChoose } = cartItem;
 
 	const findCategory = () => {
 		if (id >= 100 && id < 200) return 'nike';
@@ -24,12 +24,13 @@ const CartItem = ({ cartItem }) => {
 			<div className={`img-container  ${findCategory()}`}>
 				<img src={imageUrl} alt={`${name}`} />
 			</div>
-			{/* <div className="item-details">
+			<div className="item-details">
 				<span className="name">{name}</span>
+        <span className="size"> Size : {sizeChoose}</span>
 				<span className="price">
 					{quantity} x {price} €
 				</span>
-			</div> */}
+			</div>
 		</div>
 	);
 };
