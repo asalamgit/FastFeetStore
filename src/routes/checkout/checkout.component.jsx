@@ -13,7 +13,7 @@ const Checkout = () => {
 			{cartTotal > 0 ? (
 				<>
 					{cartItems.map((cartItem) => (
-						<CheckoutItem key={cartItem.id} cartItem={cartItem} />
+						<CheckoutItem key={`${cartItem.id} + ${cartItem.sizeChoose}`} cartItem={cartItem} />
 					))}
 					<div className="total">TOTAL: {cartTotal} €</div>
 					<PaymentForm />

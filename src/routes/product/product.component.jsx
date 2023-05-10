@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { selectCategoriesMap } from '../../store/categories/categories.selector';
 import { useDispatch, useSelector } from 'react-redux';
@@ -13,13 +13,18 @@ const Product = () => {
 	const { category, product } = useParams();
 	const [sizeChoose, setSizeChoose] = useState(39);
 	const categoriesMap = useSelector(selectCategoriesMap);
-	const [productInfo] = useState(categoriesMap[category].find((element) => element.name === product));
+	const [productInfo, setProductInfo] = useState(categoriesMap[category].find((element) => element.name === product));
 	const dispatch = useDispatch();
 	const cartItems = useSelector(selectCartItems);
 
+	useEffect(() => {
+		setProductInfo(categoriesMap[category].find((element) => element.name === product));
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [category, product]);
+
 	const addProductToCart = () => {
 		dispatch(addItemToCart(cartItems, { ...productInfo, sizeChoose }));
-		toast.success('Product add to cart')
+		toast.success('Product add to cart');
 	};
 
 	return (
