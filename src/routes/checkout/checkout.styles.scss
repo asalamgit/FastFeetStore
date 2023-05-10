@@ -11,6 +11,13 @@
 		margin: 5vw auto 0;
 	}
 
+	h1 {
+		font-size: 40px;
+		@media screen and (max-width: 750px) {
+			font-size: 6vw;
+		}
+	}
+
 	.total {
 		margin-left: auto;
 		margin-top: 0;

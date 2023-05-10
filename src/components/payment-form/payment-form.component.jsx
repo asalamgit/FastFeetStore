@@ -56,11 +56,22 @@ const PaymentForm = () => {
 		}
 	};
 
+  const CARD_ELEMENT_OPTIONS = {
+    style: {
+      base: {
+        color: "#ffffff",
+        "::placeholder": {
+          color: "#aab7c4",
+        },
+      },
+    },
+  };
+
 	return (
 		<div className="payment-form-container">
 			<form className="form-container" onSubmit={paymentHandler}>
 				<h2>Credit Card Payment:</h2>
-				<CardElement />
+				<CardElement options={CARD_ELEMENT_OPTIONS}/>
 				<button className="payment-button">{isProcessingPayment ? <div className="loading-spinner" /> : 'Pay Now'}</button>
 			</form>
 		</div>
