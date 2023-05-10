@@ -4,16 +4,16 @@
 	border: 1px solid rgb(0, 47, 255);
 	background-color: rgb(0, 68, 176);
 	z-index: 5;
-	width: 240px;
-	height: 340px;
+	width: 260px;
+	height: 360px;
 	position: absolute;
 	top: 90px;
 	right: 40px;
 	border-radius: 5px;
 
 	@media only screen and (max-width: 750px) {
-		width: 35vw;
-		height: 46vw;
+		width: 38vw;
+		height: 50vw;
 		top: 20vw;
 		right: 8vw;
 		border-radius: 5px;
@@ -41,7 +41,7 @@
 		width: 7.5px;
 
     @media only screen and (max-width: 750px) {
-      width: 2vw;
+      width: 1.5vw;
     }
 	}
 
