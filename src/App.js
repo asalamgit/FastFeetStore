@@ -4,7 +4,7 @@ import Home from './routes/home/home.component';
 import Navigation from './routes/navigation/navigation.component';
 import Authentication from './routes/authentication/authentication.component';
 import Checkout from './routes/checkout/checkout.component';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { createUserDocumentFromAuth, onAuthStateChangedListener } from './utils/firebase/firebase.utils';
 import { setCurrentUser } from './store/user/user.action';
 import { getCategoriesAndDocuments } from './utils/firebase/firebase.utils';
@@ -14,14 +14,16 @@ import NotFound from './routes/NotFound/NotFound';
 import Product from './routes/product/product.component';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { selectIsCartOpen } from './store/cart/cart.selector';
+import { setIsCartOpen } from './store/cart/cart.action';
 
 const App = () => {
 	const dispatch = useDispatch();
+	const isCartOpen = useSelector(selectIsCartOpen);
 
 	useEffect(() => {
 		const getCategoriesMap = async () => {
 			const categoriesArray = await getCategoriesAndDocuments('categories');
-			// console.log(categoriesArray)
 			dispatch(setCategories(categoriesArray));
 		};
 
@@ -41,8 +43,12 @@ const App = () => {
 		return unsubscribe;
 	}, [dispatch]);
 
+	const toggleIsCartOpen = () => {
+		if (isCartOpen) dispatch(setIsCartOpen(!isCartOpen));
+	};
+
 	return (
-		<>
+		<div onClick={toggleIsCartOpen}>
 			<Routes>
 				<Route path="/" element={<Navigation />}>
 					<Route index element={<Home />} />
@@ -53,8 +59,8 @@ const App = () => {
 					<Route path="*" element={<NotFound />} />
 				</Route>
 			</Routes>
-			<ToastContainer theme="colored" autoClose={1000}/>
-		</>
+			<ToastContainer theme="colored" autoClose={1000} />
+		</div>
 	);
 };
 
