@@ -1,7 +1,6 @@
 import ProductCard from '../product-card/product-card.component';
 import { Link } from 'react-router-dom';
 import './category-preview.styles.scss';
-import { useEffect } from 'react';
 
 const CategoryPreview = ({ title, products }) => {
 	// useEffect(() => {

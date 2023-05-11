@@ -3,12 +3,12 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPas
 import { getFirestore, doc, getDoc, setDoc,collection, writeBatch, query, getDocs} from 'firebase/firestore';
 
 const firebaseConfig = {
-	apiKey: 'AIzaSyBxtzbi7mAv3tgNc6Id3Cbe5Q-ta_bJrY4',
-	authDomain: 'crwn-clothin-db-9452f.firebaseapp.com',
-	projectId: 'crwn-clothin-db-9452f',
-	storageBucket: 'crwn-clothin-db-9452f.appspot.com',
-	messagingSenderId: '1014168453490',
-	appId: '1:1014168453490:web:864c112609b5a3051c5deb',
+	apiKey: `${process.env.API_KEY}`,
+	authDomain: `${process.env.AUTH_DOMAIN}`,
+	projectId: `crwn-clothin-db-9452f`,
+	storageBucket: `${process.env.STORAGE_BUCKET}`,
+	messagingSenderId: `${process.env.MASSAGING_SENDER_ID}`,
+	appId: `${process.env.APP_ID}`,
 };
 
 // eslint-disable-next-line no-unused-vars

@@ -1,4 +1,3 @@
-import { Outlet } from 'react-router-dom';
 import CategoryPreview from '../../components/category-preview/category-preview.component';
 import { selectCategoriesMap } from '../../store/categories/categories.selector';
 import { useSelector } from 'react-redux';
@@ -81,7 +80,6 @@ const Home = () => {
 				<h2>Discover our shoe brands</h2>
 				<Directory categories={categories} />
 			</div>
-			{/* <Outlet /> */}
 			<div className="separator"></div>
 			<div id="categories-preview">
 				<h2>Preview shoes</h2>
